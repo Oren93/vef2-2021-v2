@@ -17,6 +17,13 @@ module.exports = {
     'import/no-extraneous-dependencies': ['error', { packageDir: './' }],
 
     // Leyfum console.info, warn og error
-    'no-console': ['error', { allow: ['info', 'warn', 'error'] }],
-  },
+    //'no-console': ['error', { allow: ['info', 'warn', 'error'] }],
+  },///////////////////////////// TEMP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  "comma-dangle": 0,
+  "react/jsx-uses-vars": 1,
+  "react/display-name": 1,
+  "no-unused-vars": "warn",
+  "no-console": 1,
+  "no-unexpected-multiline": "warn",
+  "import/no-dynamic-require": "warn"
 };

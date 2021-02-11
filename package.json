@@ -1,0 +1,71 @@
+{
+  "name": "Verkefni2",
+  "version": "1.0.0",
+  "description": "[Kynning í fyrirlestri](https://www.youtube.com/watch?v=1kRJBE040oY).",
+  "main": "./src/app.js",
+  "scripts": {
+    "eslint": "eslint ./*.js",
+    "lint-css": "stylelint ./public/**/*.scss --syntax scss",
+    "lint-css:fix": "npm run lint-css -- --fix",
+    "sass": "node-sass ./public/styles.scss ./public/styles.css",
+    "sass-watch": "node-sass --watch ./public/styles.scss ./public/styles.css",
+    "start": "npm run sass && npm run nodemon",
+    "dev": "concurrently npm:sass-watch npm:nodemon",
+    "test": "npm run lint-css && npm run eslint",
+    "nodemon": "nodemon ./scr/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vefforritun/vef2-2021-v2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vefforritun/vef2-2021-v2/issues"
+  },
+  "homepage": "https://github.com/vefforritun/vef2-2021-v2#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "fs": "0.0.1-security",
+    "morgan": "^1.10.0",
+    "node-sass": "^5.0.0",
+    "pg": "^8.5.1",
+    "sass": "^1.32.6",
+    "express-validator": "^6.9.2",
+    "xss": "^1.0.8"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-export-default-from": "^7.12.13",
+    "@typescript-eslint/eslint-plugin": "^4.14.2",
+    "@typescript-eslint/parser": "^4.14.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.19.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-ejs": "0.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "nodemon": "^2.0.7",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.2.1",
+    "sass-watch": "^0.1.0",
+    "stylelint": "^13.9.0",
+    "stylelint-config-primer": "^9.3.3",
+    "stylelint-config-sass-guidelines": "^7.1.0",
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "plugins": [
+    "@babel/plugin-proposal-export-default-from"
+  ]
+}
