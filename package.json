@@ -2,7 +2,7 @@
   "name": "Verkefni2",
   "version": "1.0.0",
   "description": "[Kynning í fyrirlestri](https://www.youtube.com/watch?v=1kRJBE040oY).",
-  "main": "./src/app.js",
+  "main": "./src/app.mjs",
   "scripts": {
     "eslint": "eslint ./*.js",
     "lint-css": "stylelint ./public/**/*.scss --syntax scss",
